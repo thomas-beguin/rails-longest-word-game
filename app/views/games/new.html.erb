@@ -13,6 +13,7 @@
     <form method ="POST" action="/score" data-turbo="false">
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <%= hidden_field_tag :letters, @letters %>
+      <%= hidden_field_tag :start, @start %>
       <input type="text" name="word" class="form-control">
       <input type="submit" name="word-submit" class="btn btn-secondary mt-3">
     </form>

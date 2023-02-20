@@ -1,3 +1,24 @@
 <h1>Result</h1>
 <h2><%= @score_text %></h2>
 <%= link_to "Play again", root_path %>
+
+<div class="card mt-3">
+  <div class="card-body">
+    <h3>Score:</h3>
+    <h4><%= @score_attributes[:points] %></h4>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="card-body">
+    <h3>Time:</h3>
+    <h4><%= @score_attributes[:time] %></h4>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="card-body">
+    <h3>Total Score:</h3>
+    <h4><%= session[:score] %></h4>
+  </div>
+</div>
